@@ -5,6 +5,8 @@
     import ProjectsPage from "$lib/pages/ProjectsPage.svelte";
     import SkillsPage from "$lib/pages/SkillsPage.svelte";
 
+    let pagesComponent
+
     const pages = [
         {
             id: "home",
@@ -25,4 +27,4 @@
     ]
 </script>
 
-<ScrollSnapPages pages={pages} class="container flex flex-col mx-auto justify-center" />
+<ScrollSnapPages pages={pages} class="container flex flex-col mx-auto justify-center" bind:this={pagesComponent} />
