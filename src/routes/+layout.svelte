@@ -2,13 +2,15 @@
 	import "@skeletonlabs/skeleton/themes/theme-skeleton.css";
 	import "@skeletonlabs/skeleton/styles/skeleton.css";
 	import "../app.pcss";
-  import { AppBar, AppShell } from "@skeletonlabs/skeleton";
-  import ScrollDownArrows from "$lib/components/ScrollDownArrows.svelte";
+    import { AppBar, AppShell } from "@skeletonlabs/skeleton";
+    import ScrollDownArrows from "$lib/components/ScrollDownArrows.svelte";
+
+    let pagesComponent
 </script>
 
-<AppShell class="font-leagueSpartan">
+<AppShell class="font-leagueSpartan" slotPageContent="overflow-y-hidden">
     <slot />
-    <svelte:fragment slot="pageFooter">
+    <svelte:fragment slot="footer">
         <AppBar background="" gridColumns="grid-cols-3" slotDefault="place-self-center" slotLead="h-full">
             <svelte:fragment slot="lead">
                 <div class="flex h-full items-end  px-1.5 py-1">
