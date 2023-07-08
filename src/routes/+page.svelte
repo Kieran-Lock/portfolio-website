@@ -4,9 +4,10 @@
     import ExperiencePage from "$lib/pages/ExperiencePage.svelte";
     import ProjectsPage from "$lib/pages/ProjectsPage.svelte";
     import SkillsPage from "$lib/pages/SkillsPage.svelte";
+    import { AppBar, AppShell } from "@skeletonlabs/skeleton";
+    import ScrollDownArrows from "$lib/components/ScrollDownArrows.svelte";
 
-    let pagesComponent
-
+    let pageStore
     const pages = [
         {
             id: "home",
@@ -27,4 +28,17 @@
     ]
 </script>
 
-<ScrollSnapPages pages={pages} class="container flex flex-col mx-auto justify-center" bind:this={pagesComponent} />
+<AppShell class="font-leagueSpartan" slotPageContent="overflow-y-hidden">
+    <ScrollSnapPages pages={pages} class="container flex flex-col mx-auto justify-center" bind:pageStore={pageStore} />
+
+    <svelte:fragment slot="footer">
+        <AppBar background="" gridColumns="grid-cols-3" slotDefault="place-self-center" slotLead="h-full">
+            <svelte:fragment slot="lead">
+                <div class="flex h-full items-end  px-1.5 py-1">
+                    <span class="font-extralight text-sm italic">© 2023 Kieran Lock. All rights reserved.</span>
+                </div>
+            </svelte:fragment>
+            <ScrollDownArrows pageStore={pageStore} class="pb-10" href="#page-experience" />
+        </AppBar>
+    </svelte:fragment>
+</AppShell>

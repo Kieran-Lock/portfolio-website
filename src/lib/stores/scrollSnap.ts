@@ -1,8 +1,7 @@
 import {get, writable} from "svelte/store";
 import type {SvelteComponent} from "svelte";
-import type {Writable} from "svelte/store";
 
-const createIndexStore = (pagesInfo: {id: string, component: SvelteComponent}[]) => {
+const createPagesStore = (pagesInfo: {id: string, component: SvelteComponent}[]) => {
     const indexStore = writable(0)
     return {
         subscribe: indexStore.subscribe,
@@ -25,17 +24,4 @@ const createIndexStore = (pagesInfo: {id: string, component: SvelteComponent}[])
     }
 }
 
-const createIdStore = (pagesInfo: {id: string, component: SvelteComponent}[], indexStore: Writable<number>) => {
-    const idStore = writable(pagesInfo[0].id)
-    ret
-}
-
-const createPagesStores = (pagesInfo: {id: string, component: SvelteComponent}[]) => {
-    const indexStore = createIndexStore(pagesInfo)
-    const idStore = createIdStore(pagesInfo, indexStore)
-
-}
-
-
-
-export default page
+export default createPagesStore

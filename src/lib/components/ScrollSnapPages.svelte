@@ -1,26 +1,17 @@
 <script lang="ts">
     import type Component from "svelte/types/compiler/compile/Component";
+    import createPagesStore from "$lib/stores/scrollSnap";
 
-    export let pages: { id: string, component: Component }[]
+    export let pages: { id: string, component: Component }[] = []
     export let scrollbar = false
-    export let toPage = (pageId: string) => {
+    export let pageStore = createPagesStore(pages)
+    const toPage = (pageId: string, pages: { id: string, component: Component }[]) => {
+        if (pageId === pages[0].id) return
         window.location.replace(`#page-${toHash(pageId)}`)
     }
-    export const nextPage = () => {
-        if (pagePointer < pages.length - 1) {
-            pagePointer--
-        }
-        toPage(pages[pagePointer].id)
-    }
-    export const prevPage = () => {
-        if (pagePointer > 0) {
-            pagePointer--
-        }
-        toPage(pages[pagePointer].id)
-    }
-
-
-    let pagePointer = 0
+    pageStore.subscribe((newPage) => {
+        toPage(pages[newPage].id, pages)
+    })
     const toHash = (str: string): number => {
         let hash = 0
         for (let i = 0, len = str.length; i < len; i++) {
