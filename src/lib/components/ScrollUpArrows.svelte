@@ -7,7 +7,7 @@
     const icons = Array.from({ length: arrows - 1 } , () => (UpChevronIcon))
 </script>
 
-<button type="button" class="flex flex-col items-center {$$props.class}" on:click={pageStore.nextPage}>
+<button type="button" class="flex flex-col items-center {$$props.class}" on:click={pageStore.prevPage}>
     <UpChevronIcon class="animate-bounce" width="3em" height="3em" />
     {#each icons as arrow}
         <svelte:component this={arrow} class="animate-bounce -mt-8" width="3em" height="3em" />
