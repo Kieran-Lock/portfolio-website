@@ -13,8 +13,19 @@
 	},
 	"devDependencies": {
 		"@floating-ui/dom": "^1.4.3",
+		"@iconify-json/emojione-monotone": "^1.1.4",
+		"@iconify-json/file-icons": "^1.1.4",
+		"@iconify-json/gg": "^1.1.5",
+		"@iconify-json/ion": "^1.1.11",
+		"@iconify-json/logos": "^1.1.33",
+		"@iconify-json/maki": "^1.1.19",
+		"@iconify-json/material-symbols": "^1.1.50",
+		"@iconify-json/mdi": "^1.1.52",
 		"@iconify-json/ri": "^1.1.10",
+		"@iconify-json/simple-icons": "^1.1.59",
+		"@iconify-json/skill-icons": "^1.1.2",
 		"@iconify-json/tabler": "^1.1.80",
+		"@iconify-json/vscode-icons": "^1.1.25",
 		"@skeletonlabs/skeleton": "^1.8.0",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.0",
@@ -38,6 +49,7 @@
 	"type": "module",
 	"dependencies": {
 		"svelte-typed-js": "^1.0.3",
+		"svelte-vertical-timeline": "^1.0.0",
 		"typed.js": "^2.0.16"
 	}
 }
