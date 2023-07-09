@@ -9,10 +9,12 @@
     let scrollDiv
     let pageComponent
     const toPage = (pageIndex: number) => {
-        console.log(pageIndex)
         scrollDiv.scroll({ top: pageIndex * pageComponent.offsetHeight, behavior: "smooth" })
     }
     const handleScrolling = () => {
+        if (scrollDiv.scrollTop % pageComponent.offsetHeight!== 0) {
+            return
+        }
         pageStore.set(Math.floor(scrollDiv.scrollTop / pageComponent.offsetHeight))
     }
     onMount(() => {
