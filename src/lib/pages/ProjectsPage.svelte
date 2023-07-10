@@ -1,5 +1,5 @@
 <script lang="ts">
-    import ProjectCard from "$lib/components/ProjectCard.svelte";
+    import ProjectCard from "$lib/components/ProjectCard.svelte"
     import PythonIcon from "~icons/logos/python"
     import SQLiteIcon from "~icons/skill-icons/sqlite"
     import PyPIIcon from "~icons/logos/pypi"
@@ -7,7 +7,7 @@
     import LinuxIcon from "~icons/skill-icons/linux-light"
     import SvelteIcon from "~icons/logos/svelte-icon"
     import ASPNetCoreIcon from "~icons/vscode-icons/file-type-asp"
-    import PostgresqlIcon from "~icons/logos/postgresql"
+    import PostgreSQLIcon from "~icons/logos/postgresql"
     import ReactIcon from "~icons/logos/react"
     import NextJSIcon from "~icons/logos/nextjs-icon"
     import FirebaseIcon from "~icons/logos/firebase"
@@ -20,7 +20,7 @@
             summary: "A website designed to showcase the features of a sim-racing league administration app.",
             description: "I designed and implemented a website for Racing League Tools, utilizing Svelte, ASP.NET Core, and PostgreSQL. In this project, I demonstrated my expertise in front-end and back-end development, creating a seamless user experience and facilitating app adoption. The website provides an overview of the app's capabilities and encourages visitors to download the app and join the associated Discord server.",
             href: "https://racingleaguetools.com/",
-            technologies: [SvelteIcon, ASPNetCoreIcon, PostgresqlIcon]
+            technologies: [SvelteIcon, ASPNetCoreIcon, PostgreSQLIcon]
         },
         {
             name: "Filmmaker / Producer Portfolio",

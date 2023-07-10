@@ -7,7 +7,7 @@
 </script>
 
 <div class="flex flex-row justify-between">
-    <div class="container flex flex-col gap-8">
+    <div class="container grid grid-rows-5 gap-8">
         {#each skillsSections[skillsGroupIndex].skills as skill}
             <SkillSection name={skill.name} description={skill.description} icon={skill.icon} abilityLevel={skill.abilityLevel} />
         {/each}
