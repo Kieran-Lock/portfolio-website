@@ -25,7 +25,7 @@
 
 </script>
 
-<div class="h-full w-full snap-y snap-mandatory overflow-y-scroll {scrollbar ? '' : 'hide-scrollbar'}" bind:this={scrollDiv} on:scroll={handleScrolling}>
+<div class="flex flex-col h-full w-full snap-y snap-mandatory overflow-y-scroll {scrollbar ? '' : 'hide-scrollbar'}" bind:this={scrollDiv} on:scroll={handleScrolling}>
     {#each pages as page}
         <div class="min-h-full max-h-full snap-start overflow-hidden {$$props.class}" bind:this={pageComponent}>
             <svelte:component this={page.component} />

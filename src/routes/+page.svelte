@@ -37,7 +37,7 @@
         </AppBar>
     </svelte:fragment>
 
-    <ScrollSnapPages pages={pages} class="container flex flex-col mx-auto justify-center" bind:pageStore={pageStore} />
+    <ScrollSnapPages pages={pages} class="container flex flex-col mx-auto" bind:pageStore={pageStore} />
 
     <svelte:fragment slot="footer">
         <AppBar background="" gridColumns="grid-cols-3" slotDefault="place-self-center" slotLead="h-full">
