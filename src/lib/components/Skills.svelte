@@ -1,8 +1,20 @@
-<script>
+<script lang="ts">
     import { ListBox, ListBoxItem } from "@skeletonlabs/skeleton";
     import SkillSection from "$lib/components/SkillSection.svelte";
+    import type { ComponentType } from "svelte";
 
-    export let skillsSections = []
+    interface Skill {
+        name: string
+        description: string
+        icon: ComponentType
+        abilityLevel: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+    }
+    interface SkillSection {
+        name: string
+        skills: Skill[]
+    }
+
+    export let skillsSections: SkillSection[] = []
     let skillsGroupIndex = 0
 </script>
 

@@ -1,5 +1,7 @@
 <script lang="ts">
-    export let icon
+    import type { ComponentType } from "svelte";
+
+    export let icon: ComponentType
     export let href = "/"
     export let name = ""
     export let width = "1em"

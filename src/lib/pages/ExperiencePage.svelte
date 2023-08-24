@@ -10,7 +10,7 @@
             description: "I undertook a traineeship at OmniDigital Technologies, gaining significant experience using Unreal Engine, Blender, and Unity for asset design, games programming, scene rendering, and 3D modelling.",
             startDate: "June 2021",
             endDate: "August 2021",
-            role: "Traineeship",
+            role: "Assistant Studio Technician",
             icon: GamingIcon
         },
         {
@@ -26,7 +26,7 @@
             description: "I revised the website for Racing League Tools, in order to better highlight the features of their sim-racing league administration app, and help to drive further downloads and Discord server participation.",
             startDate: "December 2022",
             endDate: "Present",
-            role: "Web Developer",
+            role: "Full-Stack Web Developer",
             icon: RacingCarIcon
         }
     ]

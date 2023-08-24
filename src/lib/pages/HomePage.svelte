@@ -4,7 +4,7 @@
 
     const typedTextStrings = [
         "Software / Web Developer.",
-        "Proficient with React and Svelte.",
+        "Proficient with Svelte and React.",
         "Located in England, UK."
     ]
     const typingSpeed = 20

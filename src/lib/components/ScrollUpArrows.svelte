@@ -1,6 +1,7 @@
 <script lang="ts">
     import UpChevronIcon from "~icons/tabler/chevron-up"
-    export let pageStore
+    import type { PagesStore } from "$lib/stores/scrollSnap";
+    export let pageStore: PagesStore
     export let arrows = 1
     export let text = ""
 

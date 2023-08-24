@@ -1,13 +1,17 @@
 <script lang="ts">
-    import type Component from "svelte/types/compiler/compile/Component";
     import createPagesStore from "$lib/stores/scrollSnap";
-    import { onMount } from "svelte";
+    import { type ComponentType, onMount } from "svelte";
 
-    export let pages: { id: string, component: Component }[] = []
+    interface Page {
+        id: string
+        component: ComponentType
+    }
+
+    export let pages: Page[] = []
     export let scrollbar = false
     export let pageStore = createPagesStore(pages)
-    let scrollDiv
-    let pageComponent
+    let scrollDiv: HTMLDivElement
+    let pageComponent: HTMLDivElement
     const toPage = (pageIndex: number) => {
         scrollDiv.scroll({ top: pageIndex * pageComponent.offsetHeight, behavior: "smooth" })
     }

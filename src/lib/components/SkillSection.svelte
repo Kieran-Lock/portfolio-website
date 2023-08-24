@@ -1,11 +1,10 @@
 <script lang="ts">
-    import { ProgressBar } from "@skeletonlabs/skeleton";
-    import { popup } from '@skeletonlabs/skeleton';
-    import type { PopupSettings } from '@skeletonlabs/skeleton';
+    import { ProgressBar, popup, type PopupSettings } from '@skeletonlabs/skeleton';
+    import type { ComponentType } from "svelte";
 
     export let name = ""
     export let description = ""
-    export let icon
+    export let icon: ComponentType
     export let abilityLevel = 0
     const toHash = (str: string): number => {
         let hash = 0

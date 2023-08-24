@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import ScrollSnapPages from "$lib/components/ScrollSnapPages.svelte";
     import HomePage from "$lib/pages/HomePage.svelte";
     import ExperiencePage from "$lib/pages/ExperiencePage.svelte";
@@ -7,8 +7,9 @@
     import { AppBar, AppShell } from "@skeletonlabs/skeleton";
     import ScrollDownArrows from "$lib/components/ScrollDownArrows.svelte";
     import ScrollUpArrows from "$lib/components/ScrollUpArrows.svelte";
+    import type { PagesStore } from "$lib/stores/scrollSnap";
 
-    let pageStore
+    let pageStore: PagesStore
     const pages = [
         {
             id: "home",

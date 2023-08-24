@@ -1,11 +1,12 @@
 <script lang="ts">
     import OpenIcon from "~icons/ion/open-outline"
+    import type { ComponentType } from "svelte";
 
     export let name = ""
     export let summary = ""
     export let description = ""
     export let href = ""
-    export let technologyIcons = []
+    export let technologyIcons: ComponentType[] = []
 </script>
 
 
