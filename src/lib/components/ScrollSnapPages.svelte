@@ -1,15 +1,10 @@
 <script lang="ts">
-    import createPagesStore from "$lib/stores/scrollSnap";
-    import { type ComponentType, onMount } from "svelte";
-
-    interface Page {
-        id: string
-        component: ComponentType
-    }
+    import createPageStore, { type Page } from "$lib/stores/scrollSnap";
+    import { onMount } from "svelte";
 
     export let pages: Page[] = []
     export let scrollbar = false
-    export let pageStore = createPagesStore(pages)
+    export let pageStore = createPageStore(pages)
 
     let scrollDiv: HTMLDivElement
     let pageComponent: HTMLDivElement

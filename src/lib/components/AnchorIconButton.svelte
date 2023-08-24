@@ -9,6 +9,6 @@
 
 </script>
 
-<a class="icon-btn p-2 {$$props.class}" href={href} aria-label={name}>
+<a class="icon-btn p-2 {$$props.class}" href={href} aria-label={name} target="_blank">
     <svelte:component this={icon} width={width} height={height} />
 </a>

@@ -1,13 +1,17 @@
 import { get, type Writable, writable } from "svelte/store";
 import type { ComponentType } from "svelte";
 
-export interface PagesStore extends Writable<number> {
+export interface PageStore extends Writable<number> {
     nextPage: () => void
     prevPage: () => void
     toPage: (newPage: number) => void
 }
+export interface Page {
+    id: string
+    component: ComponentType
+}
 
-const createPagesStore = (pagesInfo: {id: string, component: ComponentType}[]): PagesStore => {
+const createPageStore = (pagesInfo: {id: string, component: ComponentType}[]): PageStore => {
     const indexStore = writable(0)
     return {
         ...indexStore,
@@ -30,4 +34,4 @@ const createPagesStore = (pagesInfo: {id: string, component: ComponentType}[]): 
     }
 }
 
-export default createPagesStore
+export default createPageStore

@@ -1,7 +1,7 @@
 <script lang="ts">
     import GithubIcon from "~icons/ri/github-fill"
     import DiscordIcon from "~icons/ri/discord-fill"
-    import EmailIcon from "~icons/ri/mail-open-fill"
+    import EmailIcon from "~icons/fluent/mail-28-filled"
     import AnchorIconButton from "$lib/components/AnchorIconButton.svelte";
 
     const icons = [
