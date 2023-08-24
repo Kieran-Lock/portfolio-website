@@ -2,59 +2,59 @@
     import ProjectCard from "$lib/components/ProjectCard.svelte"
     import PythonIcon from "~icons/logos/python"
     import SQLiteIcon from "~icons/skill-icons/sqlite"
-    import PyPIIcon from "~icons/logos/pypi"
-    import AsciiIcon from "~icons/file-icons/asciidoc"
+    import PyPIIcon from "~icons/devicon/pypi"
     import LinuxIcon from "~icons/skill-icons/linux-light"
     import SvelteIcon from "~icons/logos/svelte-icon"
-    import ASPNetCoreIcon from "~icons/vscode-icons/file-type-asp"
+    import DotNetIcon from "~icons/skill-icons/dotnet"
     import PostgreSQLIcon from "~icons/logos/postgresql"
-    import ReactIcon from "~icons/logos/react"
-    import NextJSIcon from "~icons/logos/nextjs-icon"
-    import FirebaseIcon from "~icons/logos/firebase"
     import RestAPIIcon from "~icons/material-symbols/api"
     import JavascriptIcon from "~icons/logos/javascript"
+    import TailwindIcon from "~icons/skill-icons/tailwindcss-dark"
+    import JsonIcon from "~icons/logos/json"
+    import RedditIcon from "~icons/logos/reddit-icon"
+    import YouTubeIcon from "~icons/logos/youtube-icon"
 
     const projects = [
         {
             name: "Racing League Tools",
-            summary: "A website designed to showcase the features of a sim-racing league administration app.",
-            description: "I designed and implemented a website for Racing League Tools, utilizing Svelte, ASP.NET Core, and PostgreSQL. In this project, I demonstrated my expertise in front-end and back-end development, creating a seamless user experience and facilitating app adoption. The website provides an overview of the app's capabilities and encourages visitors to download the app and join the associated Discord server.",
+            summary: "The website for a sim-racing league administration app.",
+            description: "I designed and implemented a website for Racing League Tools, which prompts visitors to download the app, join the associated Discord server, and support the project. The website showcases the application's features, and provides an intuitive interface for sharing rendering themes for the application with other users online.",
             href: "https://racingleaguetools.com/",
-            technologies: [SvelteIcon, ASPNetCoreIcon, PostgreSQLIcon]
+            technologies: [SvelteIcon, DotNetIcon, PostgreSQLIcon, TailwindIcon]
         },
         {
-            name: "Filmmaker / Producer Portfolio",
-            summary: "A captivating personal showreel website created for a filmmaker/producer.",
-            description: "I crafted an engaging and visually appealing platform to showcase the impressive producing and filmmaking work of the client. Leveraging Svelte, I created a user-friendly experience that highlights the client's talents and storytelling abilities. The Filmmaker / Producer Portfolio website presents a curated selection of the client's portfolio, offering visitors a glimpse into captivating film projects and captivating storytelling.",
-            href: "/",
-            technologies: [SvelteIcon]
+            name: "ScanDocs",
+            summary: "An automatic documentation tool for Python projects.",
+            description: "I published a Python library capable of creating comprehensive documentation for Python projects of any complexity. ScanDocs uses Python's dynamic nature to efficiently index a Python package, and build a fully-featured documentation website, complete with customizable themes and content, and complex searching functionality.",
+            href: "https://github.com/Kieran-Lock/ScanDocs",
+            technologies: [SvelteIcon, TailwindIcon, JsonIcon, PythonIcon, PyPIIcon]
         },
         {
-            name: "Sort-It",
-            summary: "A sorting visualizer application that demonstrates various sorting algorithms.",
-            description: "I developed Sort-It, a dynamic web application using React, Next.js, and Firebase. This project involved implementing different sorting algorithms and providing customizable features such as speed control, array generation methods, and playback control. By showcasing my proficiency in front-end development and algorithm visualization, Sort-It offers users a hands-on experience to gain insights into the efficiency and behavior of popular sorting techniques.",
-            href: "/",
-            technologies: [ReactIcon, NextJSIcon, FirebaseIcon]
+            name: "Reddit GOD",
+            summary: "An automatic YouTube Shorts video generator.",
+            description: "I developed a fully-featured YouTube Shorts video generator, which uses the Reddit API to find topical discussion threads to narrate. Reddit GOD has customizable video subjects, lengths, and background footage, and has the capability to automatically upload batches of videos to the YouTube platform, with zero human intervention.",
+            href: "https://github.com/Kieran-Lock/Reddit-GOD",
+            technologies: [PythonIcon, RedditIcon, YouTubeIcon]
         },
         {
             name: "SQLiteFrame",
-            summary: "A lightweight SQLite Object-Relational Mapping (ORM) library created in Python.",
-            description: "I created and maintain SQLiteFrame, a Python library that simplifies interaction with SQLite databases. By leveraging object-oriented programming and SQL queries, I developed an intuitive and efficient ORM framework. SQLiteFrame demonstrates my expertise in Python development and database management, providing developers with a seamless way to perform CRUD operations and leverage the power of SQLite in their applications.",
+            summary: "A lightweight SQLite ORM library developed for Python.",
+            description: "I created and maintain SQLiteFrame, a Python ORM for SQLite which uses advanced Python techniques to provide the most simple and intuitive API possible. Developers can connect to local databases, build and execute complex CRUD queries, and build schemas from existing databases for easy ORM migration.",
             href: "https://github.com/Kieran-Lock/SQLiteFrame",
             technologies: [PythonIcon, SQLiteIcon, PyPIIcon]
         },
         {
-            name: "Graphnix",
-            summary: "A powerful graphics and input framework for creating interactive GUIs in NIX consoles using Python.",
-            description: "I developed and maintain Graphnix, a Python framework for creating interactive GUIs in NIX consoles. By utilizing advanced ASCII processing and mouse/keyboard input handling, I designed visually appealing interfaces. Graphnix showcases my expertise in Python programming, ASCII manipulation, and console-based application development. It offers developers a highly customizable solution for building engaging user interfaces in NIX console environments.",
-            href: "https://github.com/Kieran-Lock/graphnix",
-            technologies: [PythonIcon, AsciiIcon, LinuxIcon]
+            name: "XtermGUI",
+            summary: "An expressive GUI framework for xterm terminals.",
+            description: "I developed and maintain XtermGUI, a Python framework for creating interactive GUIs in xterm terminals. By decoding streams of ANSI escape codes, XtermGUI provides the tools to build complex and aesthetic applications in the terminal with a Python API, including an input system (with mouse events), and layered GUI support.",
+            href: "https://github.com/Kieran-Lock/XtermGUI",
+            technologies: [PythonIcon, LinuxIcon, PyPIIcon]
         },
         {
-            name: "KahootIt",
-            summary: "A versatile quiz bot designed for Kahoot games with customizable features.",
-            description: "I created KahootIt, a powerful quiz bot capable of achieving a perfect score in Kahoot games. This project involved implementing customizable features such as random response delays and simulating player browser client behavior. By showcasing my expertise in Python programming, RESTful APIs, and network packet manipulation, KahootIt offers users flexibility and customization options to enhance their Kahoot gaming experience.",
-            href: "/",
+            name: "AutoKahoot",
+            summary: "A Kahoot quiz bot with customizable features.",
+            description: "I created AutoKahoot, a powerful quiz bot, by reverse engineering the Kahoot.it website, which is capable of achieving a perfect score in live Kahoot quiz games. By using CometD, AutoKahoot uses websockets to pose as a legitimate player, whilst factoring in customizable response times to emulate convincing human-like behaviour.",
+            href: "https://github.com/Kieran-Lock/AutoKahoot",
             technologies: [PythonIcon, RestAPIIcon, JavascriptIcon]
         }
     ]
