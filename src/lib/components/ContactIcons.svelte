@@ -4,6 +4,9 @@
     import EmailIcon from "~icons/fluent/mail-28-filled"
     import AnchorIconButton from "$lib/components/AnchorIconButton.svelte";
 
+    export let width = "2em"
+    export let height = "2em"
+
     const icons = [
         {
             name: "Github",
@@ -23,8 +26,8 @@
     ]
 </script>
 
-<div class="flex flex-row gap-12 {$$props.class}">
+<div class="flex flex-row gap-12 {$$props.class ?? ''}">
     {#each icons as icon}
-        <AnchorIconButton icon={icon.icon} href={icon.href} name={icon.name} width="3em" height="3em" />
+        <AnchorIconButton icon={icon.icon} href={icon.href} name={icon.name} width={width} height={height} />
     {/each}
 </div>

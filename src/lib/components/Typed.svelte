@@ -32,5 +32,5 @@
 </script>
 
 <div class={container}>
-    <span class="typed-js {$$props.class}"></span>
+    <span class="typed-js {$$props.class ?? ''}"></span>
 </div>
