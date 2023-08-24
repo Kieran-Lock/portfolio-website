@@ -30,18 +30,18 @@
             technologies: [SvelteIcon, TailwindIcon, JsonIcon, PythonIcon, PyPIIcon]
         },
         {
-            name: "Reddit GOD",
-            summary: "An automatic YouTube Shorts video generator.",
-            description: "I developed a fully-featured YouTube Shorts video generator, which uses the Reddit API to find topical discussion threads to narrate. Reddit GOD has customizable video subjects, lengths, and background footage, and has the capability to automatically upload batches of videos to the YouTube platform, with zero human intervention.",
-            href: "https://github.com/Kieran-Lock/Reddit-GOD",
-            technologies: [PythonIcon, RedditIcon, YouTubeIcon]
-        },
-        {
             name: "SQLiteFrame",
             summary: "A lightweight SQLite ORM library developed for Python.",
             description: "I created and maintain SQLiteFrame, a Python ORM for SQLite which uses advanced Python techniques to provide the most simple and intuitive API possible. Developers can connect to local databases, build and execute complex CRUD queries, and build schemas from existing databases for easy ORM migration.",
             href: "https://github.com/Kieran-Lock/SQLiteFrame",
             technologies: [PythonIcon, SQLiteIcon, PyPIIcon]
+        },
+        {
+            name: "Reddit GOD",
+            summary: "An automatic YouTube Shorts video generator.",
+            description: "I developed a fully-featured YouTube Shorts video generator, which uses the Reddit API to find topical discussion threads to narrate. Reddit GOD has customizable video subjects, lengths, and background footage, and has the capability to automatically upload batches of videos to the YouTube platform, with zero human intervention.",
+            href: "https://github.com/Kieran-Lock/Reddit-GOD",
+            technologies: [PythonIcon, RedditIcon, YouTubeIcon]
         },
         {
             name: "XtermGUI",

@@ -6,6 +6,7 @@
     export let description = ""
     export let icon: ComponentType
     export let abilityLevel = 0
+
     const toHash = (str: string): number => {
         let hash = 0
         for (let i = 0, len = str.length; i < len; i++) {

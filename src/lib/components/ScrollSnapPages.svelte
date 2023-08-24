@@ -10,21 +10,22 @@
     export let pages: Page[] = []
     export let scrollbar = false
     export let pageStore = createPagesStore(pages)
+
     let scrollDiv: HTMLDivElement
     let pageComponent: HTMLDivElement
+
     const toPage = (pageIndex: number) => {
         scrollDiv.scroll({ top: pageIndex * pageComponent.offsetHeight, behavior: "smooth" })
     }
     const handleScrolling = () => {
-        if (scrollDiv.scrollTop % pageComponent.offsetHeight!== 0) {
+        if (scrollDiv.scrollTop % pageComponent.offsetHeight !== 0) {
             return
         }
         pageStore.set(Math.floor(scrollDiv.scrollTop / pageComponent.offsetHeight))
     }
+
     onMount(() => {
-        pageStore.subscribe((newPage) => {
-            toPage(newPage)
-        })
+        pageStore.subscribe(toPage)
     })
 
 </script>

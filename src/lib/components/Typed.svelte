@@ -12,10 +12,9 @@
     export let readTime = 700
     export let startDelay = 0
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    let typed: Typed | null = null
     onMount(() => {
-        typed = new Typed(".typed-js", {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const typed = new Typed(".typed-js", {
             strings: strings,
             typeSpeed: forwardInterval,
             backSpeed: backInterval,

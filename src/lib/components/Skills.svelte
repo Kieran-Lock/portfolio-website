@@ -15,6 +15,7 @@
     }
 
     export let skillsSections: SkillSection[] = []
+
     let skillsGroupIndex = 0
 </script>
 

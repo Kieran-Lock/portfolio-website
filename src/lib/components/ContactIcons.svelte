@@ -3,6 +3,7 @@
     import DiscordIcon from "~icons/ri/discord-fill"
     import EmailIcon from "~icons/ri/mail-open-fill"
     import AnchorIconButton from "$lib/components/AnchorIconButton.svelte";
+
     const icons = [
         {
             name: "Github",
@@ -20,7 +21,6 @@
             href: "mailto:kieran.lock@outlook.com"
         }
     ]
-
 </script>
 
 <div class="flex flex-row gap-12 {$$props.class}">
