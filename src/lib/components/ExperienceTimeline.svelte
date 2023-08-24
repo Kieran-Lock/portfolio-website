@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import {
         Timeline,
         TimelineItem,
@@ -8,36 +8,18 @@
         TimelineContent,
         TimelineOppositeContent
     } from "svelte-vertical-timeline";
-    import GamingIcon from "~icons/mdi/controller"
-    import RacingCarIcon from "~icons/emojione-monotone/racing-car"
-    import CameraIcon from "~icons/gg/camera"
+    import type { ComponentType } from "svelte";
 
-    const experiences = [
-        {
-            title: "OmniDigital Technologies",
-            description: "Undertook a traineeship at OmniDigital Technologies, gaining expertise in asset design, Unity programming, Unreal Engine rendering, and Blender utilization for game development.",
-            startDate: "June 2021",
-            endDate: "August 2021",
-            role: "Traineeship",
-            icon: GamingIcon
-        },
-        {
-            title: "Racing League Tools",
-            description: "Developed an engaging website for Racing League Tools, highlighting the features of their sim-racing league administration app, and driving downloads and Discord server participation.",
-            startDate: "December 2022",
-            endDate: "Present",
-            role: "Web Developer",
-            icon: RacingCarIcon
-        },
-        {
-            title: "SilverBox Multimedia",
-            description: "Designed and developed a visually compelling show-reel website for a filmmaker/producer at SilverBox Multimedia, showcasing their producing and filmmaking work.",
-            startDate: "June 2023",
-            endDate: "Present",
-            role: "Freelance Web Developer",
-            icon: CameraIcon
-        }
-    ]
+    interface Experience {
+        title: string,
+        description: string,
+        startDate: string,
+        endDate: string,
+        role: string,
+        icon: ComponentType
+    }
+
+    export let experiences: Experience[]
 </script>
 
 <div class="container lg:max-w-[75%]">

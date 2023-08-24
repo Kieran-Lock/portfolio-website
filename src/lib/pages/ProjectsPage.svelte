@@ -7,7 +7,7 @@
     import SvelteIcon from "~icons/logos/svelte-icon"
     import DotNetIcon from "~icons/skill-icons/dotnet"
     import PostgreSQLIcon from "~icons/logos/postgresql"
-    import RestAPIIcon from "~icons/material-symbols/api"
+    import WebsocketIcon from "~icons/logos/websocket"
     import JavascriptIcon from "~icons/logos/javascript"
     import TailwindIcon from "~icons/skill-icons/tailwindcss-dark"
     import JsonIcon from "~icons/logos/json"
@@ -55,7 +55,7 @@
             summary: "A Kahoot quiz bot with customizable features.",
             description: "I created AutoKahoot, a powerful quiz bot, by reverse engineering the Kahoot.it website, which is capable of achieving a perfect score in live Kahoot quiz games. By using CometD, AutoKahoot uses websockets to pose as a legitimate player, whilst factoring in customizable response times to emulate convincing human-like behaviour.",
             href: "https://github.com/Kieran-Lock/AutoKahoot",
-            technologies: [PythonIcon, RestAPIIcon, JavascriptIcon]
+            technologies: [PythonIcon, WebsocketIcon, JavascriptIcon]
         }
     ]
 </script>

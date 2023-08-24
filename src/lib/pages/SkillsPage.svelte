@@ -23,6 +23,7 @@
     import VercelIcon from "~icons/devicon/vercel"
     import TauriIcon from "~icons/skill-icons/tauri-dark"
     import ArduinoIcon from "~icons/skill-icons/arduino"
+    import LinuxIcon from "~icons/skill-icons/linux-light"
 
     const skillsSections = [
         {
@@ -102,7 +103,7 @@
                     name: "Firebase",
                     description: "A comprehensive platform for building web and mobile applications, providing scalable and real-time database solutions, user authentication, and cloud hosting.",
                     icon: FirebaseIcon,
-                    abilityLevel: 10
+                    abilityLevel: 9
                 },
                 {
                     name: "SQLite",
@@ -138,6 +139,12 @@
                     description: "A distributed version control system used for tracking changes in source code during software development, providing an efficient and reliable way to manage codebases.",
                     icon: GitIcon,
                     abilityLevel: 8
+                },
+                {
+                    name: "Linux",
+                    description: "",
+                    icon: LinuxIcon,
+                    abilityLevel: 5
                 },
                 {
                     name: "JetBrains IDEs",
