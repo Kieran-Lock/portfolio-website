@@ -18,9 +18,9 @@
     ]
 </script>
 
-<AppShell class="font-leagueSpartan" slotPageContent="overflow-y-hidden" slotHeader="hidden">
+<AppShell class="font-leagueSpartan" slotPageContent="overflow-y-hidden">
     <svelte:fragment slot="header">
-        <AppBar background="bg-transparent" gridColumns="grid-cols-3" slotDefault="place-self-center" class="invisible">
+        <AppBar background="bg-transparent" gridColumns="grid-cols-3" slotDefault="place-self-center">
             <svelte:fragment slot="lead"><span></span></svelte:fragment>
             <ScrollUpArrows pageStore={pageStore} class="pt-10 {$pageStore > 0 ? 'visible' : 'invisible'}" href="#page-experience" />
         </AppBar>
