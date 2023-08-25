@@ -10,7 +10,6 @@
     import WebsocketIcon from "~icons/logos/websocket"
     import JavascriptIcon from "~icons/logos/javascript"
     import TailwindIcon from "~icons/skill-icons/tailwindcss-dark"
-    import JsonIcon from "~icons/logos/json"
     import RedditIcon from "~icons/logos/reddit-icon"
     import YouTubeIcon from "~icons/logos/youtube-icon"
 
@@ -20,14 +19,14 @@
             summary: "The website for a sim-racing league administration app.",
             description: "I designed and implemented a website for Racing League Tools, which prompts visitors to download the app, join the associated Discord server, and support the project. The website showcases the application's features, and provides an intuitive interface for sharing rendering themes for the application with other users online.",
             href: "https://racingleaguetools.com/",
-            technologies: [SvelteIcon, DotNetIcon, PostgreSQLIcon, TailwindIcon]
+            technologies: [SvelteIcon, DotNetIcon, PostgreSQLIcon]
         },
         {
             name: "ScanDocs",
             summary: "An automatic documentation tool for Python projects.",
             description: "I published a Python library capable of creating comprehensive documentation for Python projects of any complexity. ScanDocs uses Python's dynamic nature to efficiently index a Python package, and build a fully-featured documentation website, complete with customizable themes and content, and complex searching functionality.",
             href: "https://github.com/Kieran-Lock/ScanDocs",
-            technologies: [SvelteIcon, TailwindIcon, JsonIcon, PythonIcon, PyPIIcon]
+            technologies: [SvelteIcon, TailwindIcon, PyPIIcon]
         },
         {
             name: "SQLiteFrame",
@@ -60,9 +59,9 @@
     ]
 </script>
 
-<div class="flex flex-col h-full items-center justify-center gap-12">
+<div class="flex flex-col h-fit items-center justify-center gap-12 min-h-full p-8">
     <h1 class="font-extrabold text-6xl">Projects</h1>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto">
         {#each projects as project}
             <ProjectCard name={project.name} summary={project.summary} description={project.description} href={project.href} technologyIcons={project.technologies} />
         {/each}

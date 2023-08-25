@@ -27,8 +27,8 @@
 </script>
 
 <div>
-    <div class="w-fit rounded-sm [&>*]:pointer-events-none" use:popup={skillPopupSettings}>
-        <div class="flex flex-col w-80 gap-6">
+    <div class="rounded-sm [&>*]:pointer-events-none" use:popup={skillPopupSettings}>
+        <div class="flex flex-col sm:w-80 gap-6">
             <div class="flex flex-row gap-4 items-end">
                 <svelte:component this={icon} height="3em" width="3em" />
                 <div class="flex flex-col container">

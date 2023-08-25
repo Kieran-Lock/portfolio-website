@@ -203,9 +203,7 @@
     ]
 </script>
 
-<div class="flex flex-col h-full items-center gap-12 mt-28">
+<div class="flex flex-col h-fit items-center gap-12 mt-28 min-h-full p-8">
     <h1 class="font-extrabold text-6xl">Skills</h1>
-    <div class="container">
-        <Skills skillsSections={skillsSections} />
-    </div>
+    <Skills skillsSections={skillsSections} />
 </div>

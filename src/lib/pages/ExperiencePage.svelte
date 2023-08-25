@@ -6,7 +6,7 @@
 
     const experiences = [
         {
-            title: "OmniDigital Technologies",
+            title: "Omni Digital Technologies",
             description: "I undertook a traineeship at OmniDigital Technologies, gaining significant experience using Unreal Engine, Blender, and Unity for asset design, games programming, scene rendering, and 3D modelling.",
             startDate: "June 2021",
             endDate: "August 2021",
@@ -32,7 +32,7 @@
     ]
 </script>
 
-<div class="flex flex-col h-full items-center justify-center gap-12">
+<div class="flex flex-col items-center justify-center gap-12 h-fit min-h-full py-8">
     <h1 class="font-extrabold text-6xl">Experience</h1>
     <ExperienceTimeline experiences={experiences} />
 </div>

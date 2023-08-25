@@ -1,5 +1,5 @@
 <script lang="ts">
-    import ScrollSnapPages from "$lib/components/ScrollSnapPages.svelte";
+    import Pages from "$lib/components/Pages.svelte";
     import HomePage from "$lib/pages/HomePage.svelte";
     import ExperiencePage from "$lib/pages/ExperiencePage.svelte";
     import ProjectsPage from "$lib/pages/ProjectsPage.svelte";
@@ -11,34 +11,22 @@
 
     let pageStore: PageStore
     const pages = [
-        {
-            id: "home",
-            component: HomePage
-        },
-        {
-            id: "experience",
-            component: ExperiencePage
-        },
-        {
-            id: "projects",
-            component: ProjectsPage
-        },
-        {
-            id: "skills",
-            component: SkillsPage
-        }
+        HomePage,
+        ExperiencePage,
+        ProjectsPage,
+        SkillsPage
     ]
 </script>
 
-<AppShell class="font-leagueSpartan" slotPageContent="overflow-y-hidden">
+<AppShell class="font-leagueSpartan" slotPageContent="overflow-y-hidden" slotHeader="hidden">
     <svelte:fragment slot="header">
-        <AppBar background="" class gridColumns="grid-cols-3" slotDefault="place-self-center">
+        <AppBar background="bg-transparent" gridColumns="grid-cols-3" slotDefault="place-self-center" class="invisible">
             <svelte:fragment slot="lead"><span></span></svelte:fragment>
             <ScrollUpArrows pageStore={pageStore} class="pt-10 {$pageStore > 0 ? 'visible' : 'invisible'}" href="#page-experience" />
         </AppBar>
     </svelte:fragment>
 
-    <ScrollSnapPages pages={pages} class="container flex flex-col mx-auto" bind:pageStore={pageStore} />
+    <Pages pages={pages} bind:pageStore={pageStore} />
 
     <svelte:fragment slot="footer">
         <Footer pages={pages} pageStore={pageStore} />

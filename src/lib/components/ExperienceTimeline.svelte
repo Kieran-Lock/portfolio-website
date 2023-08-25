@@ -22,13 +22,13 @@
     export let experiences: Experience[]
 </script>
 
-<div class="container lg:max-w-[75%]">
+<div class="container xl:max-w-[65%]">
     <Timeline position="left">
         {#each experiences as experience}
             <TimelineItem>
                 <TimelineOppositeContent slot="opposite-content">
                     <h4>{experience.startDate} - {experience.endDate}</h4>
-                    <p>{experience.role}</p>
+                    <p class="hidden sm:block">{experience.role}</p>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                     <TimelineDot style="background-color:rgba(0, 0, 0, 0); border-width: 0">
@@ -38,7 +38,7 @@
                 </TimelineSeparator>
                 <TimelineContent style={'height: 150px;'}>
                     <h3>{experience.title}</h3>
-                    <p>{experience.description}</p>
+                    <p class="hidden md:block">{experience.description}</p>
                 </TimelineContent>
             </TimelineItem>
         {/each}
