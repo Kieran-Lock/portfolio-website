@@ -203,7 +203,7 @@
     ]
 </script>
 
-<div class="flex flex-col h-fit items-center gap-12 mt-28 min-h-full p-8">
+<div class="flex flex-col h-fit items-center justify-center gap-12 min-h-full p-8">
     <h1 class="font-extrabold text-6xl">Skills</h1>
     <Skills skillsSections={skillsSections} />
 </div>

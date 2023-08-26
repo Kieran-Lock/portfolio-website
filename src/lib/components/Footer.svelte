@@ -1,11 +1,12 @@
 <script lang="ts">
     import ScrollDownArrows from "$lib/components/ScrollDownArrows.svelte";
     import { AppBar } from "@skeletonlabs/skeleton";
-    import type { Page, PageStore } from "$lib/stores/scrollSnap";
+    import type { PageStore } from "$lib/stores/scrollSnap";
     import ContactIcons from "$lib/components/ContactIcons.svelte";
     import { fade } from "svelte/transition";
+    import type { ComponentType } from "svelte";
 
-    export let pages: Page[]
+    export let pages: ComponentType[]
     export let pageStore: PageStore
 </script>
 
@@ -19,7 +20,7 @@
     <svelte:fragment slot="trail">
         {#if $pageStore > 1}
             <div class="flex flex-row justify-end w-full h-full pr-16 items-end invisible md:visible" in:fade={{ delay: 100, duration: 300 }} out:fade={{ duration: 250 }} >
-                <ContactIcons class="h-full items-end" />
+                <ContactIcons class="h-full items-end gap-6" />
             </div>
         {/if}
     </svelte:fragment>
