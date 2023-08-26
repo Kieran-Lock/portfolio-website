@@ -4,7 +4,7 @@
     import ExperiencePage from "$lib/pages/ExperiencePage.svelte";
     import ProjectsPage from "$lib/pages/ProjectsPage.svelte";
     import SkillsPage from "$lib/pages/SkillsPage.svelte";
-    import { AppBar, AppShell } from "@skeletonlabs/skeleton";
+    import { AppShell } from "@skeletonlabs/skeleton";
     import ScrollUpArrows from "$lib/components/ScrollUpArrows.svelte";
     import type { PageStore } from "$lib/stores/scrollSnap";
     import Footer from "$lib/components/Footer.svelte";
@@ -18,16 +18,11 @@
     ]
 </script>
 
-<AppShell class="font-leagueSpartan" slotPageContent="overflow-y-hidden">
+<AppShell class="font-leagueSpartan z-0" slotPageContent="overflow-y-hidden" slotHeader="flex justify-center">
     <svelte:fragment slot="header">
-        <AppBar background="bg-transparent" gridColumns="grid-cols-3" slotDefault="place-self-center">
-            <svelte:fragment slot="lead"><span></span></svelte:fragment>
-            <ScrollUpArrows pageStore={pageStore} class="pt-10 {$pageStore > 0 ? 'visible' : 'invisible'}" href="#page-experience" />
-        </AppBar>
+        <ScrollUpArrows pageStore={pageStore} class="pt-8 {$pageStore > 0 ? 'visible' : 'invisible'}" href="#page-experience" />
     </svelte:fragment>
-
     <Pages pages={pages} bind:pageStore={pageStore} />
-
     <svelte:fragment slot="footer">
         <Footer pages={pages} pageStore={pageStore} />
     </svelte:fragment>

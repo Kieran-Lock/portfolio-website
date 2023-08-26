@@ -17,5 +17,5 @@
         <Typed class="text-2xl sm:text-4xl" strings={typedTextStrings} forwardInterval={typingSpeed} backInterval={typingSpeed} readTime={readTime} />
     </div>
     <hr class="!border-t-4" />
-    <ContactIcons width="3em" height="3em" />
+    <ContactIcons width="3em" height="3em" allowWrap class="gap-8" />
 </div>
