@@ -24,6 +24,9 @@
     import TauriIcon from "~icons/skill-icons/tauri-dark"
     import ArduinoIcon from "~icons/skill-icons/arduino"
     import LinuxIcon from "~icons/skill-icons/linux-light"
+    import DockerIcon from "~icons/skill-icons/docker"
+    import UnityIcon from "~icons/skill-icons/unity-dark"
+    import UnrealEngineIcon from "~icons/skill-icons/unrealengine"
 
     const skillsSections = [
         {
@@ -180,6 +183,12 @@
                     description: "A cloud platform for static and serverless deployment of web applications, providing an intuitive and seamless experience for deploying and scaling projects.",
                     icon: VercelIcon,
                     abilityLevel: 9
+                },
+                {
+                    name: "Docker",
+                    description: "Docker is a containerization platform that simplifies application packaging, distribution, and deployment. It allows you to create lightweight, portable containers for running applications consistently across different environments.",
+                    icon: DockerIcon,
+                    abilityLevel: 8
                 }
             ]
         },
@@ -196,6 +205,18 @@
                     name: "Arduino",
                     description: "An open-source electronics platform that allows for the creation of interactive projects and prototypes, providing a versatile and accessible platform for hardware development.",
                     icon: ArduinoIcon,
+                    abilityLevel: 7
+                },
+                {
+                    name: "Unity",
+                    description: "Unity is a versatile game development framework that empowers developers to create 2D and 3D games, simulations, and interactive content. It excels in cross-platform support and is widely favored by game developers.",
+                    icon: UnityIcon,
+                    abilityLevel: 9
+                },
+                {
+                    name: "Unreal Engine",
+                    description: "Unreal Engine is a leading game engine known for its stunning graphics and realism. It's the top choice for 3D games, VR experiences, and architectural visualizations, offering powerful tools and capabilities.",
+                    icon: UnrealEngineIcon,
                     abilityLevel: 7
                 }
             ]
