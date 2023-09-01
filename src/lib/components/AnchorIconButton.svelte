@@ -6,7 +6,7 @@
     export let name = ""
     export let width: string
     export let height: string
-    export let downloadName = false
+    export let downloadName: string | undefined
 </script>
 
 <a class="btn p-2 {$$props.class ?? ''}" href={href} aria-label={name} target="_blank" download={downloadName}>
